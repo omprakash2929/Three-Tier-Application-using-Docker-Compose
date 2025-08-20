@@ -1,46 +1,72 @@
-# Three-Tier Application Deployment using Docker Compose
-[![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-blue.svg)](https://www.linkedin.com/in/aman-devops/)
-[![GitHub](https://img.shields.io/github/stars/AmanPathak-DevOps.svg?style=social)](https://github.com/AmanPathak-DevOps)
-[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/avian19)
+
+# 🚀 Three-Tier Application Deployment using Docker Compose  
+
+[![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-blue.svg)](https://www.linkedin.com/in/omprakash-chauhan-07b1b3233/)  
+[![GitHub](https://img.shields.io/github/stars/AmanPathak-DevOps.svg?style=social)](https://github.com/omprakash2929)  
+[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/u/avian19)  
+
+
+## 📌 Overview
+This project demonstrates the deployment of a **Three-Tier Application** using **Docker Compose**.  
+The architecture consists of:  
+
+- 🗄️ **MySQL Database** – Persistent data storage  
+- ⚙️ **Node.js Backend** – RESTful API layer  
+- 🎨 **React.js Frontend** – User interface  
+
 
 ![Architecture](assets/Infra.gif)
+--
 
-This repository showcases the deployment of a three-tier application using Docker Compose. The application consists of a MySQL database, a Node.js backend, and a React.js frontend.
+## 🛠️ Prerequisites
+Before running the project, ensure you have installed:  
 
-## Prerequisites
+- [Docker](https://www.docker.com/get-started)  
+- [Docker Compose](https://docs.docker.com/compose/install/)  
 
-Before you begin, make sure you have the following installed:
+---
 
-- [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+## 📂 Project Structure
+```
+├── backend/ # Node.js backend (API)
+│ ├── Dockerfile
+│ └── ...
+├── frontend/ # React.js frontend
+│ ├── Dockerfile
+│ └── ...
+├── docker-compose.yml # Docker Compose configuration
+├── student-teacher-app/ # Frontend application code
+└── README.md
+```
 
-## Project Structure
+## 🚀 Deployment Steps
 
-- **frontend**: Dockerfile and related files for the React.js frontend.
-- **backend**: Dockerfile and related files for the Node.js backend.
-- **docker-compose.yml**: Docker Compose configuration file.
-- **student-teacher-app**: Code for the frontend application.
-- **backend**: Code for the backend application.
-
-## Deployment Steps
-
-1. **Clone the Repository:**
-   ```bash
+ ### 1️⃣ Clone the Repository
+   ```
    git clone <repository-url>
    cd <repository-directory>
    ```
 
-2. **Build and Run Docker Containers:**
-    Use Docker Compose to build and run all containers:
-    ```bash
+### 2️⃣ Build & Run Containers
+   #### Use Docker Compose to build and run all containers:
+   ```
     docker-compose up -d
-    ```
+   ```
 
-3. **Access the Application:**
+### 3️⃣ Access the Application
+   #### Open your browser and visit:
+   ```
+👉 http://localhost:80
+   ```
 
-    Open your favorite browser and visit http://localhost:80. Explore the MERN stack application!
-
-## Data Persistence
-    Data persistence is ensured by using Docker volumes. If the MySQL container is deleted, data remains available and is automatically added to a new Docker container by providing the same Docker volume.
-
-    Feel free to explore and modify the Docker Compose file and related files to enhance your understanding of containerization and deployment using Docker Compose! Happy coding! 🚀
+## 💾 Data Persistence
+  - The MySQL database uses Docker Volumes for persistent storage.
+  - Even if the MySQL container is removed, the data remains intact and will be reloaded in a new container.  
+   
+## 📖 Learning Outcomes
+ #### By exploring this repository, you will:
+   - Understand three-tier architecture deployment using Docker Compose.
+   - Learn how to configure persistent storage with Docker volumes.
+   - Gain experience deploying MERN stack applications inside containers
+## 🙌 Contribution
+Contributions are welcome! Feel free to fork this repo, submit issues, or open pull requests to enhance the project.
